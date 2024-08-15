@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css" type="text/css" />
     <script type="text/javascript" src="js/Winwheel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <!--v1.0.7-->
 
@@ -16,13 +17,13 @@
         <img src="./resources/arrow.png" />
       </div>
       <div class="wheel-container">
-        <td width="500" height="600" class="the_wheel">
+        <td width="470" height="570" class="the_wheel">
           <button onClick="startSpin();" type="button" class="canvas-button">
             <canvas
-              style="border-radius: 50%"
+              style="border-radius: 50%; border: 3px solid black"
               id="canvas"
-              width="400"
-              height="400"
+              width="370"
+              height="370"
             ></canvas>
             <!-- Thu nhỏ bánh xe -->
           </button>

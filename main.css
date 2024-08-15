@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  background-color: black;
+  background-color: rgb(202, 202, 202);
 }
 
 input:focus,
@@ -40,7 +40,7 @@ button:focus {
 }
 
 .names-container {
-  width: 100%;
+  width: 40%;
   margin-top: 20px;
 }
 

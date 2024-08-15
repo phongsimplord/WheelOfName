@@ -1,4 +1,4 @@
-const WHEEL_RADIUS = 250;
+const WHEEL_RADIUS = 230;
 const TEXT_FONT_SIZE = 20;
 
 // Create new wheel object specifying the parameters at creation time.
@@ -99,9 +99,15 @@ function alertPrize(indicatedSegment) {
   theWheel.rotationAngle = (lastSegment.startAngle + lastSegment.endAngle) / 2;
   theWheel.draw(); // Vẽ lại bánh xe với góc quay mới
 
-  // Thông báo phần tử cuối cùng là người chiến thắng
-  alert("The winner is: " + lastSegment.text);
-  resetWheel(); // Reset bánh xe sau khi thông báo
+  // Thông báo phần tử cuối cùng là người chiến thắng bằng SweetAlert2
+  Swal.fire({
+    title: "The winner is: " + lastSegment.text,
+    text: "congratulation",
+    icon: "success",
+    confirmButtonText: "OK",
+  }).then(() => {
+    resetWheel(); // Reset bánh xe sau khi thông báo
+  });
 }
 
 // =======================================================================================================================
