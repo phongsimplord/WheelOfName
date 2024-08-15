@@ -1,5 +1,5 @@
-const WHEEL_RADIUS = 400;
-const TEXT_FONT_SIZE = 50;
+const WHEEL_RADIUS = 250;
+const TEXT_FONT_SIZE = 20;
 
 // Create new wheel object specifying the parameters at creation time.
 let theWheel = new Winwheel({

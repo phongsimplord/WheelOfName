@@ -16,28 +16,33 @@
         <img src="./resources/arrow.png" />
       </div>
       <div class="wheel-container">
-        <td width="438" height="582" class="the_wheel">
+        <td width="500" height="600" class="the_wheel">
           <button onClick="startSpin();" type="button" class="canvas-button">
-            <canvas id="canvas" width="800" height="800"></canvas>
+            <canvas
+              style="border-radius: 50%"
+              id="canvas"
+              width="400"
+              height="400"
+            ></canvas>
+            <!-- Thu nhỏ bánh xe -->
           </button>
         </td>
       </div>
-    </div>
-
-    <div class="names-container">
-      <button type="button" class="collapsible-button">+</button>
-      <div class="content">
-        <form class="js-form">
-          <input
-            autofocus
-            type="text"
-            aria-label="Enter a name to add"
-            placeholder="Enter a name to add"
-            class="js-name-input"
-          />
-        </form>
-        <ul class="todo-list js-name-list"></ul>
-        <div class="empty-state"></div>
+      <div class="names-container">
+        <div class="content">
+          <!-- Loại bỏ nút + -->
+          <form class="js-form">
+            <input
+              autofocus
+              type="text"
+              aria-label="Enter a name to add"
+              placeholder="Enter a name to add"
+              class="js-name-input"
+            />
+          </form>
+          <ul class="todo-list js-name-list"></ul>
+          <div class="empty-state"></div>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="js/WheelScript.js"></script>
